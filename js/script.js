@@ -106,7 +106,7 @@ async function checkUser() {
                     console.error('Authentication Error:', error);
                 } else {
                     // SUCCESSFUL LOGIN: Redirect the user!
-                    window.location.href = '/database1.html'; 
+                    window.location.href = './database1.html'; 
                 }
             });
         }
@@ -115,4 +115,5 @@ async function checkUser() {
 
 
 // FIX: The function call is moved here, ensuring 'supabase' is defined.
+
 checkUser();
